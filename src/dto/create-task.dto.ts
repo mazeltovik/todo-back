@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsBoolean} from 'class-validator';
+import { IsNotEmpty, IsString, IsBoolean } from 'class-validator';
 
 export class CreateTaskDto {
   @IsNotEmpty()
@@ -6,5 +6,5 @@ export class CreateTaskDto {
   task!: string;
   @IsNotEmpty()
   @IsBoolean()
-  isCompleted!:boolean;
+  isCompleted!: boolean;
 }
